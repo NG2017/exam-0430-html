@@ -1,0 +1,104 @@
+@charset "UTF-8";
+*, *::before, *::after {
+  padding: 0;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #fbb03b;
+  padding: 70px 15px 15px;
+  color: #138073;
+  font-size: 16px;
+  font-family: Roboto;
+}
+
+a:link {
+  color: #138073;
+}
+
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* sajnos felul kell írni pár BS css-t */
+input {
+  color: #71b3ab !important;
+  border: 1px solid #808080 !important;
+  border-radius: 0 !important;
+}
+
+label {
+  display: inherit !important;
+}
+
+input[type="submit"] {
+  padding: 20px 30px;
+  background: #39b69f;
+  border: 1px solid #fff !important;
+  color: #fff !important;
+  text-transform: uppercase;
+}
+
+h1 {
+  text-align: center;
+  color: #138073;
+}
+
+@media only screen and (max-width: 767.98px) {
+  h1 {
+    text-align: right;
+    font-size: 18px;
+  }
+}
+
+.burgerMenu {
+  background: #138073;
+  cursor: pointer;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 99;
+  border-radius: 50%;
+  height: 56px;
+  width: 56px;
+  border: 2px solid #fbb03b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.crossed .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-8px, 8px);
+          transform: rotate(-45deg) translate(-8px, 8px);
+  -webkit-box-shadow: 1.5px 1.5px #0e0d0da1;
+          box-shadow: 1.5px 1.5px #0e0d0da1;
+}
+
+.crossed .bar2 {
+  opacity: 0;
+}
+
+.crossed .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -6px);
+          transform: rotate(45deg) translate(-6px, -6px);
+}
