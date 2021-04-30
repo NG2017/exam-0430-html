@@ -26,6 +26,26 @@ a:link {
     margin: 0 auto;
 }
 
+form {
+    text-align: center;
+}
+
+::placeholder {
+  color: $light-green !important;
+     opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+color: $light-green !important;
+   ;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: $light-green !important;
+
+  }
+
+
 
 /* sajnos felul kell írni pár BS css-t */
 input {
@@ -34,9 +54,15 @@ input {
     border-radius: 0 !important;
 }
 label {
-	display: inherit !important;
+	display: block !important;
 }
 
+#gdpr {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
 
 input[type="submit"] {
     padding: 20px 30px;

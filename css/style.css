@@ -23,6 +23,44 @@ a:link {
   margin: 0 auto;
 }
 
+form {
+  text-align: center;
+}
+
+::-webkit-input-placeholder {
+  color: #71b3ab !important;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  color: #71b3ab !important;
+  opacity: 1;
+  /* Firefox */
+}
+
+::-ms-input-placeholder {
+  color: #71b3ab !important;
+  opacity: 1;
+  /* Firefox */
+}
+
+::placeholder {
+  color: #71b3ab !important;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #71b3ab !important;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #71b3ab !important;
+}
+
 /* sajnos felul kell írni pár BS css-t */
 input {
   color: #71b3ab !important;
@@ -31,7 +69,18 @@ input {
 }
 
 label {
-  display: inherit !important;
+  display: block !important;
+}
+
+#gdpr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
 }
 
 input[type="submit"] {
